@@ -1,0 +1,73 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link th:href="@{../static/suc.css}" href="../static/suc.css" rel="stylesheet" type="text/css" />
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            align-items: center;
+            text-align: center;
+            font-family: sans-serif;
+            background:rgba(36, 113, 177, 0.623);
+            background-size: cover;
+
+
+        }
+        .container{
+            margin-top: 2%;
+            margin-left: 37%;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+            width: 30%;
+            background: rgba(255, 255, 255, 0.575);
+            padding: 50px 30px;
+
+        }
+        h2{
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        p{
+            font-size: 15px;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        button{
+            font-size: 15px;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            color:#fff;
+            background:#1DA1F2;
+            border-radius: 5px;
+            padding: 7px;
+            border: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2 class="Cong">Congratulations!</h2>
+
+    <p th:text="${param.id}"></p>
+    <p th:text="${param.name}"></p>
+    <p th:text="${param.phone}"></p>
+    <h2>Entry Successful </h2>
+    <form method="get" action="/addMore">
+    <button  >Add more numbers </button>
+    </form>
+</div>
+</body>
+</html>
