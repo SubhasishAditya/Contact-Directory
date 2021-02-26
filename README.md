@@ -1,4 +1,4 @@
 ## Contact-Directory
 Like a telephone directory it will store and show the name with phone number.
-###Technology used:
+### Technology used:
 Spring Boot
